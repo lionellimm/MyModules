@@ -1,6 +1,8 @@
 package sg.edu.rp.c346.id20015553.mymodules;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -17,6 +19,7 @@ public class c346 extends AppCompatActivity {
     TextView textVenue;
     Button backButton;
 
+    @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,8 +35,9 @@ public class c346 extends AppCompatActivity {
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(c346.this, MainActivity.class);
-                startActivity(intent);
+//                Intent intent = new Intent(c346.this, MainActivity.class);
+//                startActivity(intent);
+                finish();
             }
         });
 
